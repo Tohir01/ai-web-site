@@ -1,0 +1,42 @@
+@import "../abstract/mixins";
+/* Blog section styles */
+.blog {
+    width: 100vw;
+    background-color: $bg-dark-color;
+    color: #fff;
+}
+
+
+.blog-section__text, .blog-section__imgbox {
+    margin-top: 80px;
+}
+
+.blog-section__text {
+    width: 50%;
+}
+
+.blog-section__imgbox img {
+    width: 100%;
+}
+
+.blog-section__title {
+    font-size: 2rem; //35px
+    margin-bottom: 30px;
+}
+
+.blog-section__description {
+    margin-bottom: 20px;
+    font-size: 1rem; 
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+@include media-md {
+    /* Blog */
+    .blog-section {
+        &__text {
+            width: 100%;
+        }
+    }
+}
+

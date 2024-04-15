@@ -1,0 +1,36 @@
+/* Logo-ipsum section styles */
+
+@import "../abstract/mixins";
+
+.logo-ipsums  {
+    width: 100vw;
+    background-color: $bg-dark-color;
+    margin-top: 50px;
+}
+
+.logo-ipsum {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+@include media-lg {
+    /*Logo*/
+    .logo-ipsum {
+        flex-wrap: wrap;
+        flex-basis: 45%;
+        
+    }
+
+    .header__logo-image {
+        position: absolute;
+        left: 50px;
+    }
+}
+
+@include media-md {
+    .logo-margin {
+        margin-top: 20px;
+    }
+}

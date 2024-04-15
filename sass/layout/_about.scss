@@ -1,0 +1,58 @@
+/* About section styles */
+@import "../abstract/mixins";
+.about {
+    width: 100vw;
+    background-color: $bg-dark-color;
+    color: #fff;
+}
+
+.about-info {
+    @include flex-between;
+    margin-top: 30px;
+
+   &__imgbox img {
+    width: 80%; 
+   }
+
+   &__text {
+    width: 40%;
+   }
+
+    &__title {
+        font-size: 1.6rem; //40px
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        @include button-styles;
+        width: 150px;
+        height: 52px;
+    }
+
+    &__button:hover {
+        @include button-hover;
+    }
+}
+
+@include media-lg {
+    /* About */
+    .about-info {
+
+        &__text {
+            width: 100%;
+            margin-top: 50px;
+        }
+    }
+}
+
+@include media-md {
+    .about-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
